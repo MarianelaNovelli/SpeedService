@@ -1,0 +1,381 @@
+/*
+COLORES
+principal: #fa0050
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+.msj-error{
+    display: none;
+}
+.img-avatar{
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+}
+.icono-eliminar{
+    padding: 0.3rem 0.5rem;
+    background-color: #dc3545;
+    color: #fff;
+    border-radius: 3px;
+}
+.icono-modificar{
+    padding: 0.3rem 0.5rem;
+    background-color: #198754;
+    color: #fff;
+    border-radius: 3px;
+}
+.icono-modificar:hover,.icono-eliminar:hover{
+    color: #fff;
+    opacity: .7;
+}
+.form-eliminar{
+    margin-top: 2rem;
+    text-align: center;
+    color: black;
+    padding: 1rem;
+    background-color: #f2f2f2;
+    border-radius: 9px;
+}
+/* ESTILOS NAV */
+.navbar-collapse{
+    justify-content: flex-end;
+}
+.navbar-collapse a{
+    font-size: 1rem;
+}
+.navbar-brand{
+    color: #fa0050!important;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+.nav-link{
+    color: #000!important;
+}
+.nav-link:hover{
+    color: #fa0050!important;
+}
+.active {
+    color: #fa0050!important;
+    font-weight: bold;
+}
+
+.img-logo{
+    height: 3rem;
+    width: auto;
+    padding-right: .7rem;
+    margin-right: .7rem;
+}
+header .cta{
+    border-radius: 20px;
+    padding: 0.5rem 0.8rem;
+    background-color: #fa0050;
+    color: #fff!important;
+    margin-left: 2rem;
+    font-size: 14px;    
+}
+header .cta:hover{
+    opacity: .7;
+    color: #fff!important;
+}
+
+/* SECCION BIENVENIDA */
+.seccion-bienvenida{
+    min-height: 100vh;
+    background: url(../img/fondo2.jpg) no-repeat center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.seccion-bienvenida .contenedor {
+    text-align: center;
+    background-color: #000000c7;
+    padding: 2rem;
+    max-width: 800px;
+    border-radius: 10rem;
+}
+.seccion-bienvenida .contenedor h1{
+    color: #fff;
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+.seccion-bienvenida .contenedor p{
+    color: #fff;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+
+.seccion-bienvenida .contenedor a{
+    text-decoration: none;
+    color: #fff;
+    background-color: #fa0050;
+    padding: .5rem .8rem;
+    display: block;
+    max-width: 180px;
+    transition: all .5s ease;
+    border-radius: 20px;
+}
+.seccion-bienvenida .contenedor a:hover{
+    transform:scale(1.1);
+}
+
+/* SECCION SERVICIOS */
+.seccion-servicios h2{
+    color: #fa0050;
+    font-size: 2rem;
+}
+
+.seccion-servicios .btn{
+    background-color: #fa0050;
+    color:#fff;
+}
+
+.seccion-servicios .imagen-servicios, .cardProvedor .imagen-servicios{
+    width: auto;
+    height: 13rem;
+    object-fit: cover;
+}
+
+.boton-servicio{
+    border-radius: 20px;
+    opacity: .9;
+    background-color: #fa0050;
+    color: white;
+}
+.boton-servicios{
+    border-radius: 20px;
+    opacity: .9;
+    background-color: #fa0050;
+    color: white;
+}
+.boton-servicios:hover{
+    background-color: black!important;
+    color: white;
+}
+
+/* SECCION INFO SERVICIOS */
+.info-servicios{
+    background-color: #f3f3f3;
+}
+.info-servicios .info-servicio{
+    color: black;
+}
+.info-servicios .icono {
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    margin: auto;
+    border-radius: 5px;
+    align-items: center;
+}
+
+.info-servicios .icono i{
+    font-size: 28px;
+    color: #fa004fc4;
+}
+.card .card-text {
+    min-height: 50px;
+}
+
+/* PIE DE PAGINA */
+footer{
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+    color: #fff;
+}
+footer h4{
+    font-size: 18px;
+}
+footer p, li{
+    font-size: 13px;
+}
+footer .row div{
+    text-align: center;
+}
+footer .copyright{
+    display: grid;
+    align-items: center;
+}
+
+.icono-footer{
+    color: rgb(4, 136, 92);
+}
+
+/* PAGINA REGISTRAR SERVICIO */
+.registrar-servicio{
+    padding-top: 4.5rem!important;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../img/registro1.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.registrar-servicio .formulario .row:first-child{
+    /*align-items: center;*/
+    background-color: rgba(97, 90, 90, 0.425);
+    color:#f2f2f2;
+    padding: 2rem;
+    border-radius: 5px;
+}
+
+.registrar-servicio .formulario p{
+    text-align: justify;
+}
+
+/* PAGINA SERVICIOS */
+.pagina-servicios{
+    padding-top: 6rem!important;
+    background-color: #f2f2f2;
+}
+.pagina-servicios .columna-servicios{
+    background-color: #fff;
+    padding: 1rem;
+}
+.pagina-servicios .columna-servicios .servicio-1, .pagina-servicios .columna-servicios .servicio-2{
+    border-right: 1px solid;
+}
+
+
+/* PAGINA INGRESAR */
+.pagina-ingresar{
+    padding-top: 4.5rem!important;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../img/registro2.jpg) no-repeat center center;
+    background-size: cover;
+}
+.pagina-ingresar .seccion-login .row:first-child{
+    align-items: center;
+    background-color: rgba(97, 90, 90, 0.425);
+    color: #f2f2f2;
+    padding: 2rem;
+    border-radius: 5px;
+}
+
+/* PANEL ADM */
+
+.panel-bienvenida{
+    padding-top: 4.5rem!important;
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url(../img/panel_administrador1.jpg) no-repeat center center;
+    background-size: cover;
+    color: white;
+}
+.panel-admin{
+    border-radius: 100px;
+    padding: 0.4rem;
+    background-image: linear-gradient(to right, rgba(50, 54, 105, 0.678) 0%, rgba(4, 4, 68, 0.842) 80%);
+    color: #fff;
+}
+.boton-mostrar{
+    border-radius: 15px;
+    opacity: .9;
+    background-color: #fa0050;
+    color: white;
+    margin: 4px;
+}
+.boton-agregar{
+    border-radius: 15px;
+    opacity: .9;
+    background-color: #002efa;
+    color: white;
+    margin: 4px;
+}
+.boton-agregar:hover, .boton-mostrar:hover{
+    transform:scale(1.1);
+    color: white;
+}
+.alta-categorias{
+    padding-top: 5rem;
+    min-height: 70vh;
+    background: url(../img/nueva_categoria.jpg) no-repeat center center;
+    background-size: cover;
+}
+.alta-categorias h1, label{
+    color: #f2f2f2;
+}
+.boton-crear-categoria{
+    border-radius: 20px;
+    opacity: .9;
+    background-color: #fa0050;
+    color: white;
+    margin: 4px;
+}
+.boton-crear-categoria:hover{
+    background-color: #f2f2f2!important;
+    color: #fa0050;
+}
+.boton-eliminar-categoria{
+    border-radius: 20px;
+    opacity: .9;
+    background-color: #fa0050;
+    color: white;
+    margin: 4px;
+}
+.boton-eliminar-categoria:hover{
+    background-color: red!important;
+    color: #f2f2f2;
+    transform: scale(1.1);
+}
+.imagen-modificar-categoria{
+    max-width: 100%;
+    max-height: 135px;
+}
+.fondo-formulario{
+    background-color: #434343b2;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/* PAGINA SER PROVEEDOR */
+.pagina-proveedor{
+    padding-top: 4.5rem!important;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../img/registro1.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+/* PAGINA ELEGIR PROVEEDOR */
+.cardProvedor{
+    padding-top: 4.5rem!important;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../img/elegir_servicio_proveedor.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+/* ALTA REGISTRO FLETE */
+
+.registro-servicio{
+    padding-top: 4.5rem!important;
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url(../img/panel_administrador1.jpg) no-repeat center center;
+    background-size: cover;
+    color: white;
+}
+#datosServicio,#datosVehiculo{
+    transition: all 1s ease;
+}
